@@ -7,7 +7,7 @@ export default class Login extends Component {
     return (
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.textContainer}>
-          <Text style={styles.logoText}>Logo</Text>
+          <Text style={styles.logoText}>Logo New</Text>
           <Text style={styles.subHeading}>_______________</Text>
         </View>
         <View style={styles.formContainer}>
