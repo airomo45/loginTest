@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, KeyboardAvoidingView } from 'react-native';
 import LoginForm from './LoginForm';
+import { FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default class Login extends Component {
   render() {
     return (
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.textContainer}>
-          <Text style={styles.logoText}>Logo New</Text>
+          <View style={styles.innerContainer}>
+            <MaterialCommunityIcons name="github-face"
+              size={20}
+              color="#fff"
+              style={{ paddingRight: 10 }} />
+            <Text style={styles.logoText}>Logo</Text>
+          </View>
           <Text style={styles.subHeading}>_______________</Text>
         </View>
         <View style={styles.formContainer}>
@@ -53,4 +60,10 @@ const styles = StyleSheet.create({
   subHeading: {
     color: '#fff',
   },
+  innerContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+  }
 });
